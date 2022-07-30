@@ -87,14 +87,16 @@ nav ul li:nth-child(2) a {
 
 section.showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   /* align-content: center; */
-  gap: 2rem;
+  gap: 4rem;
+  padding: 0 4.5rem;
   /* height: 100vh; */
 }
 
 .showcase__header {
+  justify-self: start;
   align-self: end;
   /* width: 550px; */
 }
@@ -127,4 +129,8 @@ section.showcase {
   justify-items: center;
   align-items: center;
   margin-top: 4rem;
+}
+
+.showcase__image {
+  justify-self: end;
 }
