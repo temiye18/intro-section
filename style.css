@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+  --epilogue: "Epilogue", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: var(--epilogue);
+  color: var(--medium-gray);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+
+/* NAVBAR SECTION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+nav img {
+  width: 100%;
+}
+
+.logo__ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li:nth-child(1) a,
+nav ul li:nth-child(2) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login a > button {
+  background: none;
+  color: var(--medium-gray);
+  border: 2px solid var(--medium-gray);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* SHOWCASE SECTION */
+
+section.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  justify-content: center;
+  /* align-content: center; */
+  gap: 2rem;
+  /* height: 100vh; */
+}
+
+.showcase__header {
+  align-self: end;
+  /* width: 550px; */
+}
+
+.showcase__header h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--almost-black);
+}
+
+.showcase__header p.showcase__text {
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.showcase__header button {
+  background: var(--almost-black);
+  color: var(--almost-white);
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.showcase__companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  align-content: end;
+  justify-items: center;
+  align-items: center;
+  margin-top: 4rem;
+}
