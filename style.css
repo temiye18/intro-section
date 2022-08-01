@@ -87,7 +87,7 @@ nav ul li:nth-child(2) a {
 
 section.showcase {
   display: grid;
-  grid-template-columns: 500px 450px;
+  grid-template-columns: 550px 450px;
   justify-content: space-around;
   align-items: center;
   padding: 0 3rem;
